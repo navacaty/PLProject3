@@ -20,9 +20,9 @@ $(document).ready(function()  {
 			}
 		});
 	$("#submit").click(function() {
-		//var fn = $("fn").val();
-		//$(this).text(fn);
-		alert("alert");
+		var fn = $("#e_fn").val();
+		$().text(fn);
+		alert(fn);
 	});
 
 });

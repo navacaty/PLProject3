@@ -16,25 +16,25 @@ $(document).ready(function()  {
 	});
 	$("#submit_e").click(function() {
 		var fn = $("#e_fn").val();
-		$().text("<table border = \"0\"> <tr> <td> first name: </td>
-		<td> <input type = \"text"\ id= \"e_fn\" size = \"20\" /> </td>
-			</tr>
-
-			<tr>
-			<td> last name:  </td>
-		<td> <input type = \"text"\ id = \"e_ln\" size = "20" /> </td>
-			</tr>
-
-			<tr>
-			<td> email address: </td>
-		<td> <input type = \"text"\ id = "e_email" size = "20" /> </td>
-			</tr>
-
-			<tr>
-			<td> Social security number: </td>
-		<td> <input type = \"text"\ id = "ssn" size = "20" /> </td>
-			</tr>
-			</table>");
+		var ln = $("#e_ln").val();
+		var ea = $("#e_email").val();
+		var ssn = $("#ssn").val();
+		document.writeln("First name: " + fn + "<BR>");
+		document.writeln("Last name: " + ln + "<BR>");
+		document.writeln("Email address: " + ea + "<BR>");
+		document.writeln("SSN: " + ssn + "<BR>");
+		document.writeln("<a href = \"./index.html\">GO BACK NOW </a>");
+		});
+	$("#submit_c").click(function() {
+		var fn = $("#c_fn").val();
+		var ln = $("#c_ln").val();
+		var ea = $("#c_email").val();
+		var cn = $("#cn").val();
+		document.writeln("First name: " + fn + "<BR>");
+		document.writeln("Last name: " + ln + "<BR>");
+		document.writeln("Email address: " + ea + "<BR>");
+		document.writeln("Customer number: " + cn + "<BR>");
+		document.writeln("<a href = \"./index.html\">GO BACK NOW </a>");
 	});
 
 });
